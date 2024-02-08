@@ -11,6 +11,7 @@ import { courseRoutes } from '../modules/course/course.routes';
 import { managementDepartmentRoutes } from '../modules/managementDepartment/managementDepartment.routes';
 import { offeredCourseRoutes } from '../modules/offeredCourse/offeredCourse.routes';
 import { offeredCourseClassScheduleRoutes } from '../modules/offeredCourseClassSchedule/offeredCourseClassSchedule.routes';
+import { offeredCourseSectionRoutes } from '../modules/offeredCourseSection/offeredCourseSection.routes';
 
 const router = express.Router();
 
@@ -62,7 +63,11 @@ const moduleRoutes = [
   {
     path: '/offered-course-class-schedules',
     routes: offeredCourseClassScheduleRoutes
-},
+  },
+  {
+    path: '/offered-course-sections',
+    routes: offeredCourseSectionRoutes
+  }
 ];
 
 moduleRoutes.forEach((route) => {
