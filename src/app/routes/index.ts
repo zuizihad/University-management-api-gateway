@@ -12,6 +12,7 @@ import { managementDepartmentRoutes } from '../modules/managementDepartment/mana
 import { offeredCourseRoutes } from '../modules/offeredCourse/offeredCourse.routes';
 import { offeredCourseClassScheduleRoutes } from '../modules/offeredCourseClassSchedule/offeredCourseClassSchedule.routes';
 import { offeredCourseSectionRoutes } from '../modules/offeredCourseSection/offeredCourseSection.routes';
+import { roomRoutes } from '../modules/room/room.routes';
 
 const router = express.Router();
 
@@ -47,6 +48,10 @@ const moduleRoutes = [
   {
     path: '/buildings',
     routes: buildingRoutes
+  },
+  {
+    path: '/rooms',
+    routes: roomRoutes
   },
   {
     path: '/courses',
